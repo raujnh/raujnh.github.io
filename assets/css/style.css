@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #ffc6c6;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav {
+  background-color: #bb8080;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+nav ul li a :hover {
+  text-decoration: underline;
+  color: aliceblue;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(red, green, blue, alpha);
+  background: #fff;
+  transition: transform 0, 3s ease;
+}
+
+.card :hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card ::content h3 {
+  margin-top: 0;
+  color: black;
+}
+
+.card ::content p {
+  font-size: 14px;
+  color: #993131;
+}
+
+section {
+  margin: 10px auto;
+  padding: 5px;
+  background: rgb(226, 147, 173);
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: rgba(red, green, blue, alpha);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}

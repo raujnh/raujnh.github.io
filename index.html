@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyek UAS PPLM</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+    <header>
+      <h1>Video Edukasi</h1>
+      <p>selamat datang di platform video edukasi kami</p>
+    </header>
+    <nav>       
+    <ul>
+    <li>
+    <a href="#gambar">Gambar</a>
+    <a href="#Audio">Audio</a>
+    <a href="#Video">Video</a>
+    <a href="#Form">Form</a>
+    </li>
+    </ul>
+    </nav>
+ <!-- Konten gambar -->
+    <section id="gambar">
+      <h2>Gambar Contoh Produk Video Edukasi</h2>
+      <p>
+        Gambar ini merupakan contoh produk video edukasi yang kami tawarkan.
+        Dengan gambar yang menarik, kami berharap dapat menarik perhatian
+        pengguna.
+      </p>
+
+      <div class="card-container">
+        <!-- Card Gambar -->
+        <div class="card">
+          <img src="assets/images/contoh-gambar.jpg" alt="Contoh Gambar" />
+
+          <div class="card-content">
+            <h3>Contoh Gambar</h3>
+            <p>
+              Gambar ini menunjukkan contoh produk video edukasi yang kami
+              tawarkan. Dengan desain yang menarik, kami berharap dapat
+              meningkatkan minat pengguna.
+            </p>
+          </div>
+        </div>
+        <!-- Card Gambar -->
+        <div class="card">
+          <img src="assets/images/contoh-gambar.jpg" alt="Contoh Gambar" />
+
+          <div class="card-content">
+            <h3>Contoh Gambar</h3>
+            <p>
+              Gambar ini menunjukkan contoh produk video edukasi yang kami
+              tawarkan. Dengan desain yang menarik, kami berharap dapat
+              meningkatkan minat pengguna.
+            </p>
+          </div>
+        </div>
+        <!-- Card Gambar -->
+        <div class="card">
+          <img src="assets/images/contoh-gambar.jpg" alt="Contoh Gambar" />
+
+          <div class="card-content">
+            <h3>Contoh Gambar</h3>
+            <p>
+              Gambar ini menunjukkan contoh produk video edukasi yang kami
+              tawarkan. Dengan desain yang menarik, kami berharap dapat
+              meningkatkan minat pengguna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Audio">
+    <h2> Audio Contoh Produk Video Edukasi</h2>
+    <audio src="./assets/audio/audio.mp3" controls
+    type="audio/mp3"> 
+    Browser tidak mendukung elemen audio
+    </audio>
+    </section>
+
+    <section id="video">
+    <h2>Contoh Produk Video Promosi</h2>
+    <video src="./assets/video/video.mp4"controls
+    type="video.mp4">
+     Browser tidak mendukung elemen audio
+    </video>
+    </section>
+
+    <section id="Form">
+    <h2> Formulir Pendaftaran </h2>
+    <form  onsubmit="return showMessage()">
+    <input 
+    type="text"
+    name="name"
+    id="name"
+    placeholder="Masukan Nama Anda"
+    required
+    />
+    <button type="submit">Kirim</button>
+    <p id="output"> </p>
+    </form>
+    </section>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
