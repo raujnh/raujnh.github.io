@@ -1,0 +1,539 @@
+/* Styling Umum */
+body {
+  font-family: "Montserrat", sans-serif; /* Font bersih dan modern */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf9f6; /* Krem lembut */
+  color: #444; /* Abu-abu gelap */
+  scroll-behavior: smooth; /* Untuk efek gulir yang halus */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif; /* Font display untuk judul */
+  color: #ffffff; /* Coklat gelap hangat */
+}
+h2 {
+  font-family: "Playfair Display", serif; /* Font display untuk judul */
+  color: #ffffff; /* Coklat gelap hangat */
+}
+h3,
+h4 {
+  font-family: "Playfair Display", serif; /* Font display untuk judul */
+  color: #6b5b50; /* Coklat gelap hangat */
+}
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 2.8em;
+  text-align: center;
+  margin-top: 0;
+}
+h3 {
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 1.6em;
+  text-align: center;
+  color: #8d7b68; /* Warna coklat sedang untuk sub-judul */
+}
+
+/* Tombol Umum */
+.view-map-button,
+.rsvp-hero-button {
+  /* rsvp-hero-button baru */
+  display: inline-block;
+  background-color: #b28f79; /* Coklat hangat */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px 5px; /* Margin antar tombol */
+}
+
+.view-map-button:hover,
+.rsvp-hero-button:hover {
+  background-color: #9c7d69; /* Coklat lebih gelap saat hover */
+  transform: translateY(-2px); /* Efek sedikit naik */
+}
+
+/* Bagian Hero */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Tinggi penuh viewport */
+  display: flex;
+  flex-direction: column; /* Untuk menata konten secara vertikal */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  padding: 20px; /* Padding untuk konten */
+  box-sizing: border-box; /* Agar padding tidak menambah lebar/tinggi */
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.45
+  ); /* Overlay gelap agar teks lebih jelas */
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 90%; /* Batasi lebar konten */
+}
+
+.hero-content .invitation-text {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+/* Pesan RSVP di Hero */
+.rsvp-message {
+  color: white;
+  font-size: 1.1em;
+  margin-top: 20px;
+  opacity: 0; /* Awalnya tersembunyi */
+  transition: opacity 0.5s ease-out; /* Animasi muncul */
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rsvp-message.show {
+  opacity: 1; /* Tampilkan saat class 'show' ditambahkan */
+}
+
+/* Styling untuk Teks Pembuka Islami */
+.opening-arabic {
+  font-family: "Times New Roman", serif; /* Atau font Arab yang elegan jika Anda punya */
+  font-size: 2.2em;
+  font-weight: bold;
+  text-align: center;
+  color: #8d7b68; /* Warna coklat sedang yang sama dengan sub-judul */
+  margin-bottom: 15px;
+  direction: rtl; /* Untuk teks Arab, memastikan arah penulisan kanan ke kiri */
+}
+
+.opening-text,
+.opening-text-main,
+.opening-text-secondary {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  color: #6b5b50; /* Coklat gelap hangat */
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.opening-text-main {
+  font-size: 1.3em; /* Sedikit lebih besar untuk kalimat utama */
+  font-weight: 500;
+}
+
+.opening-text-secondary {
+  font-size: 1.1em; /* Sedikit lebih kecil dari main */
+  margin-bottom: 40px; /* Jarak lebih jauh ke konten berikutnya */
+}
+
+/* Sesuaikan margin-top pada h3 pertama di details-section */
+.details-section h3:first-of-type {
+  margin-top: 50px; /* Memberi ruang antara teks pembuka dan judul "Cinta, tawa..." */
+}
+
+/* Bagian Detail Acara */
+.details-section {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.event-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px; /* Jarak antar kolom */
+  margin-top: 40px;
+}
+
+.ceremony,
+.reception {
+  flex: 1;
+  min-width: 280px; /* Lebar minimum kolom */
+  padding: 30px;
+  background-color: #fdf4eb; /* Krem lembut yang sedikit lebih terang */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.ceremony p,
+.reception p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Bagian Video Only (baru) */
+.video-only-section {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.video-container-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.video-thumbnail.large-thumbnail {
+  /* Styling untuk thumbnail besar di bagian video only */
+  width: 80%; /* Lebar yang lebih besar */
+  max-width: 700px; /* Batasi lebar maksimum */
+  height: 400px; /* Tinggi tetap untuk proporsi */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Bayangan lebih kuat */
+  margin: 0 auto; /* Tengah */
+}
+/* Pastikan play-icon dan hover di video-thumbnail tetap berfungsi */
+
+/* Modal Styling */
+.modal {
+  display: none; /* INI YANG MEMASTIKAN MODAL TERSEMBUNYI SAAT START */
+  position: fixed; /* Tetap di posisi walaupun halaman digulir */
+  z-index: 1000; /* Letakkan di atas konten lain */
+  left: 0;
+  top: 0;
+  width: 100%; /* Lebar penuh */
+  height: 100%; /* Tinggi penuh */
+  overflow: auto; /* Aktifkan gulir jika konten terlalu besar */
+  background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap transparan */
+  justify-content: center; /* Untuk centering konten modal saat display:flex */
+  align-items: center; /* Untuk centering konten modal saat display:flex */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px; /* Lebar maksimum modal */
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.close-button {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Footer sudah dihapus dari HTML, jadi tidak perlu styling di sini */
+
+/* --- Animasi --- */
+
+/* Transisi Umum untuk Elemen Section */
+section {
+  opacity: 0; /* Sembunyikan semua section secara default */
+  transform: translateY(50px); /* Geser ke bawah sedikit */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Transisi untuk muncul */
+}
+
+section.animate-in {
+  opacity: 1; /* Tampilkan */
+  transform: translateY(0); /* Kembali ke posisi semula */
+}
+
+/* Animasi untuk Konten di Dalam Section (efek staggered) */
+.details-section .event-info > div,
+.video-only-section .video-thumbnail {
+  /* Animasi untuk thumbnail video di bagian akhir */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  /* transition-delay akan diatur oleh JS untuk efek staggered */
+}
+
+/* Class yang akan ditambahkan JS saat elemen terlihat */
+.animate-child-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animasi untuk Hero Section (efek fade-in awal) */
+.hero-content h1,
+.hero-content h2,
+.hero-content p.invitation-text, /* Tambahkan p.invitation-text untuk animasi */
+.rsvp-hero-button, /* Tombol RSVP hero */
+.rsvp-message /* Pesan RSVP */ {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  /* Delay untuk setiap elemen di hero content akan diatur oleh JS */
+}
+
+/* Class untuk mengaktifkan animasi hero content */
+body.hero-loaded .hero-content h1,
+body.hero-loaded .hero-content h2,
+body.hero-loaded .hero-content p.invitation-text,
+body.hero-loaded .rsvp-hero-button,
+body.hero-loaded .rsvp-message {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animasi untuk Teks Pembuka (di dalam details-section) */
+.opening-arabic,
+.opening-text,
+.opening-text-main,
+.opening-text-secondary {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Kelas yang akan ditambahkan JS saat section terlihat, dengan staggered delay */
+.details-section.animate-in .opening-arabic {
+  transition-delay: 0.2s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.details-section.animate-in .opening-text {
+  transition-delay: 0.4s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.details-section.animate-in .opening-text-main {
+  transition-delay: 0.6s;
+  opacity: 1;
+  transform: translateY(0);
+}
+.details-section.animate-in .opening-text-secondary {
+  transition-delay: 0.8s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efek Hover pada Gambar & Video Thumbnail */
+.video-thumbnail img {
+  transition: transform 0.3s ease; /* Tambah transisi ke img di dalam thumbnail */
+}
+.video-thumbnail:hover img {
+  transform: scale(1.05);
+}
+
+.play-icon {
+  transition: background-color 0.3s ease;
+}
+.video-thumbnail:hover .play-icon {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* --- Responsivitas --- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.8em;
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+
+  .hero-section {
+    height: 75vh; /* Lebih pendek di mobile */
+    justify-content: flex-end; /* Konten di bawah */
+    padding-bottom: 50px;
+  }
+
+  .event-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ceremony,
+  .reception {
+    width: 90%; /* Lebar penuh di mobile */
+  }
+
+  .video-thumbnail.large-thumbnail {
+    width: 95%; /* Lebar lebih besar di mobile */
+    height: 250px; /* Tinggi disesuaikan untuk mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .rsvp-hero-button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
+
+.komentar-section {
+  background-color: #fefefe;
+  padding: 2rem;
+  text-align: center;
+}
+
+.komentar-section h2 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+#komentar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+#komentar-form input,
+#komentar-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#komentar-form button {
+  padding: 0.8rem;
+  background-color: #9e6b4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#daftar-komentar {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.komentar-item {
+  background: #f5f5f5;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scroll saat klik */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigasi-atas {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  padding: 12px 24px;
+  background-color: rgba(255, 255, 255, 0.05); /* super bening */
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  animation: fadeInDown 1s ease forwards;
+  opacity: 0;
+}
+
+/* Tombol seragam, bening */
+.navigasi-atas a {
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1); /* bening tapi terlihat */
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.navigasi-atas a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* Smooth muncul */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}

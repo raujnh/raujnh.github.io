@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan Nur Alyza Zahra & Muhammad Farhan</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head> 
+    <!-- HERO SECTION -->
+      <header id="hero" class="hero-section">
+      <div class="overlay"></div>
+
+      <!-- Navigasi hanya tampil di slide awal -->
+      <nav class="navigasi-atas">
+  <a href="#detail">Detail Acara</a>
+  <a href="#momen">Momen</a>
+  <a href="#pesanhati">Pesan Hati</a>
+</nav>
+
+      <div class="overlay"></div>
+      <img
+        src="assets/image/foto2.jpg"
+        alt="Pernikahan Nur Alyza Zahra & Muhammad Farhan"
+        class="hero-image"
+      />
+      <div class="hero-content">
+        <p class="invitation-text">Anda diundang ke</p>
+        <h1>PERNIKAHAN</h1>
+        <h2>NUR ALYZA ZAHRA & MUHAMMAD FARHAN</h2>
+        <a
+          class="rsvp-hero-button"
+          href="https://wa.me/6283833635890?text=Halo%20saya%20ingin%20mengonfirmasi%20kehadiran%20untuk%20acara%20pernikahan%20Nur%20Alyza%20Zahra%20dan%20Muhammad%20Farhan"
+          target="_blank"
+          >RSVP via WhatsApp</a
+        >
+      </div>
+    </header>
+
+    <!-- DETAILS SECTION: Teks Islami -->
+    <section class="details-section">
+      <div class="container">
+        <p class="opening-arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+        <p class="opening-text">
+          Dengan nama Allah, Maha Pengasih, Maha Penyayang.
+        </p>
+        <p class="opening-text-main">
+          Dalam perjalanan indah yang kami mulai bersama ini, kami dipenuhi
+          sukacita dan syukur.
+        </p>
+        <p class="opening-text-secondary">
+          Dikelilingi oleh cinta keluarga dan sahabat, kami mengundang Anda
+          untuk bergabung bersama kami merayakan awal kehidupan baru kami.
+        </p>
+      </div>
+    </section>
+
+    <!-- EVENT SECTION: Akad & Resepsi -->
+    <section id="detail" class="section"> 
+      <div class="container">
+        <h3>Detail Acara</h3>
+        <div class="event-info">
+          <div class="ceremony">
+            <h4>Akad Nikah / Pemberkatan</h4>
+            <p>16 Agustus 2024</p>
+            <p>Jumat, pukul 10:00 WITA</p>
+            <p>Masjid Raya Sabilal Muhtadin, Banjarmasin</p>
+            <a
+              href="https://maps.app.goo.gl/d55XFD8kk1wrBRWaA "
+              target="_blank"
+              class="view-map-button"
+              >Lihat Peta</a
+            >
+          </div>
+          <div class="reception">
+            <h4>Resepsi</h4>
+            <p>17 Agustus 2024</p>
+            <p>Sabtu, pukul 19:00 WITA</p>
+            <p>Gedung Sultan Suriansyah, Banjarmasin</p>
+            <a
+              href="https://maps.app.goo.gl/CW15SDpChaG3N9Vx7"
+              target="_blank"
+              class="view-map-button"
+              >Lihat Peta</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section id="momen" class="section">
+      <div class="container">
+        <h3>Cinta, tawa, dan kebahagiaan selamanya</h3>
+        <p>
+          Petualangan kami dimulai di sini. Bergabunglah bersama kami saat kami
+          mengucapkan 'Saya Bersedia' dan memulai perjalanan kami selamanya.
+        </p>
+        <div class="video-container-wrapper">
+          <video
+            controls
+            playsinline
+            style="
+              width: 100%;
+              max-width: 800px;
+              border-radius: 8px;
+              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            "
+          >
+            <source src="assets/video/prewed.mp4" type="video/mp4" />
+            Browser Anda tidak mendukung video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKGROUND MUSIC -->
+    <audio id="background-music" loop>
+      <source
+        src="assets/music/Sal Priadi - Kita Usahakan Rumah Itu.mp3"
+        type="audio/mpeg"
+      />
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- SCRIPT -->
+    <script src="assets/js/script.js"></script>
+    <section id="pesanhati" class="section">
+      <h4>Ucapan & Doa</h4>
+      <form id="komentar-form">
+        <input type="text" id="nama" placeholder="Nama Anda" required />
+        <textarea
+          id="pesan" 
+          placeholder="Tulis ucapan atau doa..."
+          required
+        ></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+      <div id="daftar-komentar"></div>
+    </section>
+  </body>
+</html>
